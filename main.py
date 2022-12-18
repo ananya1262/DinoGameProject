@@ -31,12 +31,12 @@ while True:
         if fingerUp==[0,0,0,0,0]:
             cv2.putText(frame,'Finger Count: 0',(20,460),cv2.FONT_HERSHEY_COMPLEX,1,(255,250,240),1,cv2.LINE_AA)
             cv2.putText(frame,'Jump',(420,460),cv2.FONT_HERSHEY_COMPLEX,1,(255,250,240),1,cv2.LINE_AA)
-            # PressKey(space_key_pressed)
-            # space_pressed=True
-            # current_key_pressed.add(space_key_pressed)
-            # key_pressed=space_key_pressed
-            # key_pressed=True
-            # key_count=key_count+1
+            PressKey(space_key_pressed)
+            space_pressed=True
+            current_key_pressed.add(space_key_pressed)
+            key_pressed=space_key_pressed
+            key_pressed=True
+            key_count=key_count+1
              
         if fingerUp==[0,1,0,0,0]:
             cv2.putText(frame,'Finger Count: 1',(20,460),cv2.FONT_HERSHEY_COMPLEX,1,(255,250,240),1,cv2.LINE_AA)
